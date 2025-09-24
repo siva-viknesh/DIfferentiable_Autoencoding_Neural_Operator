@@ -1,4 +1,4 @@
-<h1 align="center">🚀 DIANO: Differentiable Autoencoding Neural Operator</h1>
+<h2 align="center">🚀 DIANO: Differentiable Autoencoding Neural Operator</h2>
 
 **DIANO** is a framework for interpretable, physics-consistent latent-space modeling of high-dimensional spatio-temporal fields. It methodologically combines autoencoding, operator learning, and differentiable PDE solvers to enable efficient and interpretable simulations.
 
