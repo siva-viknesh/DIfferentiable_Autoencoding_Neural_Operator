@@ -26,24 +26,19 @@
 ## 🧪 Problem Scenarios
 
 - 🖼️ **Nonlinear Dimensionality Reduction (Static Mapping)**  
-  Encodes and decodes high-dimensional fields without temporal evolution:  
-  $$
-  \mathbf{u}(t^n)
-  \xrightarrow{\text{Encoder}}
-  \mathbf{z}(t^n)
-  \xrightarrow{\text{Decoder}}
-  \hat{\mathbf{u}}(t^n)
-  $$
+  Encodes and decodes high-dimensional fields without temporal evolution:    
+  ![Equation 1](https://latex.codecogs.com/png.latex?\mathbf{u}(t^n)%20\xrightarrow{\text{Encoder}}%20\mathbf{z}(t^n)%20\xrightarrow{\text{Decoder}}%20\hat{\mathbf{u}}(t^n))
+
 
 - ⏩ **Nonlinear Dimensionality Reduction with Temporal Marching**  
   Latent evolution via differentiable PDE solver:  
   $$
   \mathbf{u}(t^n)
-  \xrightarrow{\text{Encoder}}
+  \;\xrightarrow{\text{Encoder}}\;
   \mathbf{z}(t^n)
-  \xrightarrow{\text{PDE Evolution}}
+  \;\xrightarrow{\text{PDE Evolution}}\;
   \mathbf{z}(t^{n+1})
-  \xrightarrow{\text{Decoder}}
+  \;\xrightarrow{\text{Decoder}}\;
   \hat{\mathbf{u}}(t^{n+1})
   $$
 
@@ -51,11 +46,11 @@
   Compresses geometric dimensions, evolves latent state, reconstructs original field:  
   $$
   \mathbf{u}_{D_h}(t^n)
-  \xrightarrow{\text{Encoder}}
+  \;\xrightarrow{\text{Encoder}}\;
   \mathbf{z}_{D_\ell}(t^n)
-  \xrightarrow{\text{PDE Evolution}}
+  \;\xrightarrow{\text{PDE Evolution}}\;
   \mathbf{z}_{D_\ell}(t^{n+1})
-  \xrightarrow{\text{Decoder}}
+  \;\xrightarrow{\text{Decoder}}\;
   \hat{\mathbf{u}}_{D_h}(t^{n+1})
   $$
 
@@ -63,13 +58,14 @@
   Fuses multiple input fields in latent space for complex interactions:  
   $$
   \{\mathbf{u}^i(t^n)\}_{i=1}^m
-  \xrightarrow{\text{Encoder}}
+  \;\xrightarrow{\text{Encoder}}\;
   \{\mathbf{z}^i(t^n)\}_{i=1}^m
-  \xrightarrow{\text{PDE Mapping}}
+  \;\xrightarrow{\text{PDE Mapping}}\;
   \mathbf{p}(t^n)
-  \xrightarrow{\text{Decoder}}
+  \;\xrightarrow{\text{Decoder}}\;
   \hat{\mathbf{P}}(t^n)
   $$
+
 
 ---
 
