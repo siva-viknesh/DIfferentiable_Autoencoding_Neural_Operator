@@ -26,11 +26,6 @@
 ## 🧪 Problem Scenarios
 
 - 🖼️ **Nonlinear Dimensionality Reduction (Static Mapping)**  
-  Encodes and decodes high-dimensional fields without temporal evolution:    
-  ![Equation 1](https://latex.codecogs.com/png.latex?\mathbf{u}(t^n)%20\xrightarrow{\text{Encoder}}%20\mathbf{z}(t^n)%20\xrightarrow{\text{Decoder}}%20\hat{\mathbf{u}}(t^n))
-
-
-- 🖼️ **Nonlinear Dimensionality Reduction (Static Mapping)**  
 
 <div align="center">
   <img src="https://latex.codecogs.com/png.image?\dpi{150}\bg{transparent}\color{white}\mathbf{u}(t^n)\xrightarrow{\text{Encoder}}\mathbf{z}(t^n)\xrightarrow{\text{Decoder}}\hat{\mathbf{u}}(t^n)" alt="Equation 1"/>
