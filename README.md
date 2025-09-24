@@ -46,7 +46,7 @@
 - 🔗 **Many-to-One Functional Mapping via Latent Fusion**  
 
 <div align="center">
-  <img src="https://latex.codecogs.com/png.image?\dpi{150}\bg{transparent}\color{white}\{\mathbf{u}^i(t^n)\}_{i=1}^m\xrightarrow{\text{Encoder}}\{\mathbf{z}^i(t^n)\}_{i=1}^m\xrightarrow{\text{PDE\ Mapping}}\mathbf{p}(t^n)\xrightarrow{\text{Decoder}}\hat{\mathbf{P}}(t^n)" alt="Equation 4"/>
+  <img src="https://latex.codecogs.com/png.image?\dpi{150}\bg{transparent}\color{white}\%7B\mathbf{u}^i(t^n)\%7D_{i=1}^m\xrightarrow{\text{Encoder}}\%7B\mathbf{z}^i(t^n)\%7D_{i=1}^m\xrightarrow{\text{PDE\ Mapping}}\mathbf{p}(t^n)\xrightarrow{\text{Decoder}}\hat{\mathbf{P}}(t^n)" alt="Equation 4"/>
 </div>
 
 
