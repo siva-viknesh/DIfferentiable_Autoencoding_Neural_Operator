@@ -39,21 +39,21 @@
 DIANO consists of three tightly coupled components:
 
 ```
-High-dim Input (N×N)
+High-resolution Input (N×N)
         │
    ┌────▼────────────────────┐
    │   Encoder Neural        │   Fourier layers + AvgPool2D downsampling
-   │   Operator              │   → coarse-grid latent space (M×M)
+   │      Operator           │   → coarse-grid latent space (M×M)
    └────────────────────┬────┘
                         │
              ┌──────────▼──────────┐
-             │  Differentiable     │   FDM (OUCS2 upwind + central diff)
-             │  PDE Solver         │   RK4 (parabolic) / Point-Jacobi (elliptic)
+             │  Differentiable     │   FDM (Upwind Compact + Central Diff schemes)
+             │     PDE Solver      │   RK4 (parabolic) / Point-Jacobi (elliptic)
              └──────────┬──────────┘
                         │
    ┌────────────────────▼────┐
    │   Decoder Neural        │   ConvTranspose2D upsampling + Fourier layers
-   │   Operator              │   → reconstructed high-dim output (N×N)
+   │       Operator          │   → reconstructed high-dim output (N×N)
    └─────────────────────────┘
 ```
 
@@ -75,8 +75,8 @@ DIANO is evaluated across four representative configurations:
 **2D Vorticity Transport Equation (VTE)** and variants:
 - Full 2D linearized VTE
 - 2D Stokes flow (no convection)
-- 2D inviscid linearized VTE
-- 1D linearized VTE (streamwise or normal direction)
+- 2D Inviscid linearized VTE
+- 1D Linearized VTE (streamwise or normal direction)
 
 **3D Pressure Poisson Equation (PPE):**
 - Solved iteratively via Point-Jacobi on the coarse latent grid
