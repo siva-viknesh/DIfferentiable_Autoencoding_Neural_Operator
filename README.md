@@ -95,10 +95,9 @@ DIANO is evaluated across four representative configurations:
 
 ## 📈 Results Highlights
 
-- DIANO achieves reconstruction MSE on the order of **10⁻⁶–10⁻⁷** for static mapping, competitive with or better than CNN-AE, NN-AE, and CNO baselines, using **~1.2M parameters** vs. 31M for CNO.
+- DIANO achieves reconstruction MSE on the order of **10⁻⁶** for static mapping, competitive with or better than CNN-AE, NN-AE, and CNO baselines, using **~1.2M parameters** vs. 31M for CNO.
 - Latent vorticity fields faithfully reproduce the **k⁻³ energy cascade** spectrum of the ground-truth vorticity field.
 - Autoregressive rollout errors **saturate at O(10⁻²)** across seen, interpolated (Re = 180), and extrapolated (Re = 225) Reynolds numbers — no unbounded error growth.
-- DIANO outperforms PPNN and LaSDI on long-horizon rollout stability while maintaining interpretable latent dynamics.
 - Robust to input noise up to **15%** (Gaussian), with graceful degradation at 25%.
 
 ---
@@ -108,7 +107,7 @@ DIANO is evaluated across four representative configurations:
 - **Unstructured grid support** via geometry-aware neural operators
 - **Turbulent flow modeling** and multiscale latent representations
 - **Latent PDE discovery** — treating PDE parameters as trainable quantities
-- **Attention-based autoencoding operators** for long-range spatial dependencies
+- **Attention-based autoencoding operators** for long-range spatial dependencies and scalability
 
 ---
 
